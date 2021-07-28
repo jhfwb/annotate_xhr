@@ -6,8 +6,8 @@
 pip install annotate_xhr@git+https://github.com/...(后面加上文件的位置)
 
 eg：
-pip install  annotate_xhr@git+https://github.com/jhfwb/annotate_xhr
-``` 
+pip install  annotate_xhr@git+https://github.com/jhfwb/annotate_xhr#egg=annotate_xhr
+```
 
 ## 2.如何开始运行annotate_xhr
 
