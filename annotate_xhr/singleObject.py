@@ -1,3 +1,6 @@
+from annotate_xhr.common import getAnnotateSite
+from annotate_xhr.err import AnnotateSiteException
+
 
 def singleObj(classT):
     """实现类的单例化;
@@ -10,6 +13,8 @@ def singleObj(classT):
         ...     pass
     """
     def run(*args, **kwargs):
+        if getAnnotateSite(classT)!='class':
+            raise AnnotateSiteException('注解的位置错误:该注解只能位于类的上方')
         if hasattr(classT,'_instance')==False:
             setattr(classT,'_instance',object.__new__(classT,*args, **kwargs))
             getattr(classT, '_instance').__init__(*args, **kwargs)

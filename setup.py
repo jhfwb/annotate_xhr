@@ -5,7 +5,7 @@ import setuptools
 # sys.argv=['setup.py','sdist','bdist_wheel'] #将sys.argv的外部参数改成setup.py。相当于是运行python
 setuptools.setup(
     name="annotate_xhr",#软件包名称
-    version='1.0',
+    version='1.0.0.1',
     author="许焕燃",
     author_email='527077832@qq.com',
     description="暂无软件简介信息",
