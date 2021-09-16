@@ -11,5 +11,6 @@
 from annotate_xhr.singleObject import singleObj #单例化注解
 from annotate_xhr.threading_run import threadingRun
 from annotate_xhr.proxyFunction import proxy
+from annotate_xhr.banOverLoad import banOverLoad
 
-__all__=['singleObj','threading_run','proxy']
+__all__=['singleObj','threading_run','proxy','banOverLoad']
